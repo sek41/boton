@@ -1,0 +1,12 @@
+html{
+    background-color: rgb(49, 49, 49);
+    color: rgb(180, 180, 160);
+}
+div{
+    width: auto;
+    position: relative;
+    align-self: center;
+    font-size: 23px;
+    font-style: italic;
+    font-family:'open Sans'
+}
