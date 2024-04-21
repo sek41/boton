@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">color change</button>
+
+    <script>
+        function color() {
+            let number = Math.floor(Math.random() * 10);
+            switch(number) {
+                case 0:
+                    return "red";
+                case 1:
+                    return "orange";
+                case 2:
+                    return "yellow";
+                case 3:
+                    return "green";
+                case 4:
+                    return "blue";
+                case 5:
+                    return "purple";
+                case 6:
+                    return "pink";
+                case 7:
+                    return "cyan";
+                case 8:
+                    return "magenta";
+                case 9:
+                    return "brown";
+                default:
+                    alert("Please enter a number between 0 and 9");
+                    return ""; // Devuelve una cadena vacía en caso de error
+            }
+        }
+
+        document.getElementById('button').addEventListener('click', function() {
+            document.body.style.backgroundColor = color();
+        });
+    </script>
+</body>
+</html>
